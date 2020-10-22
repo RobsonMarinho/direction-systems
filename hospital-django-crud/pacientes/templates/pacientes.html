@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <table class="table table-borderless">
+        <thead class="border-bottom font-weight-bold">
+            <tr>
+                <td>Nome</td>
+                <td>Telefone</td>
+                <td>E-mail</td>
+                <td>Endereço</td>
+                <td>Data de nasc.</td>
+                <td>
+                    <a href="{% url 'create_paciente' %}" class="btn btn-outline-success">
+                        <i class="fas fa-plus"></i> Novo Paciente 
+                    </a>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for paciente in list_paciente %}
+                <tr>
+                    <td>{{paciente.nome}}</td>
+                    <td>{{paciente.telefone}}</td>
+                    <td>{{paciente.email}}</td>
+                    <td>{{paciente.endereco}}</td>
+                    <td>{{paciente.dtNascimento}}</td>
+                    <td>
+                        <a href="{% url 'update_paciente' paciente.id %}" class="btn text-secondary px-0">
+                            <i class="far fa-edit fa-lg"></i>
+                        </a>
+                        <form action="{% url 'delete_paciente' paciente.id %}" method="POST" class="d-inline">
+                            {% csrf_token %}
+                            <button type="submit" class="btn">
+                                <i class="far fa-trash-alt fa-lg text-danger float-right"></i>    
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}
