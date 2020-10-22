@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syscron - {% block title %}{% endblock %}</title>
+
+    <link href="/static/media/icone2.ico" rel="icon" type="image/png">
+
+    <link rel="stylesheet" href="">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/lazy.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/demo.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/error.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet" type="text/css">
+
+
+    <link href="{% static 'css/pricing.css' %}" rel="stylesheet" type="text/css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    {% block extra_css %}{% endblock %}
+
+
+</head>
+<body class="">
+{% include "navbar.html" %}
+{% include "header.html" %}
+
+<div class="container-fluid">
+    {% block content %}
+
+    {% endblock %}
+</div>
+{% include "footer.html" %}
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}" ></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    const Message = (text, icon) => {
+        swal({
+            text: text,
+            icon: icon,
+            button: false,
+            timer: 3000,
+        })
+    }
+    {% if messages %}
+        {% for message in messages %}
+            {%  if message.tags != 'info' %}
+                window.onload = Message('{{message}}', '{{ message.tags }}')
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</script>
+</body>
+</html>

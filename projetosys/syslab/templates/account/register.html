@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Cadastro{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row">
+	  <div class="col-12 col-md-4 offset-md-1 mt-2">
+				  <div class="register-form">
+					  <div class="mb-5">
+						  <h1>Cadastre-se</h1>
+						  <p class="lead">Crie sua conta, para acessar nosso sistema.</p>
+					  </div>
+					  <form method="post" action="{% url 'account_signup' %}">
+						  {% csrf_token %}
+						  <div class="form-group">
+						    <label >Email</label>
+						    {{ form.email }}
+							  <p style="color: red">{{ form.email.errors }}</p>
+						    <small id="emailHelp" class="form-text text-info">Nunca compartilharemos seu e-mail com mais ninguém.</small>
+						  </div>
+						  <div class="form-group">
+						    <label>Senha</label>
+						    {{ form.password1 }}
+							{{ form.password1.errors }}
+						  </div>
+						  <div class="form-group">
+						    <label>Nome</label>
+						    {{ form.first_name }}
+						    {{ form.first_name.errors }}
+						  </div>
+						  <div class="form-group">
+						    <label>Sobrenome</label>
+						    {{ form.last_name }}
+							{{ form.first_name.errors }}
+						  </div>
+              <div class="custom-control custom-checkbox my-4">
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+				  <label class="custom-control-label" for="customCheck2">Eu li e concordo com os <a class="text-primary">termos de uso</a>.</label>
+              </div>
+
+			  	<button type="submit" class="btn btn-block btn-primary" data-toggle="modal" data-target="#glassAnimals">Cadastrar</button>
+				</form>
+
+					<p class="small my-4 text-center">Já tem uma conta? <a href="{% url 'account_login' %}">Faça login</a>.</p>
+			</div>
+	  </div>
+	  <div class="col-12 col-md-6 offset-md-1 d-flex">
+		  <img src="/static/media/undraw_Access_account_re_8spm.svg">
+	  </div>
+
+<!--
+	<div class="modal fade" id="glassAnimals" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+	  	<div class="modal-content">
+			<div class="modal-header">
+		 	 	<h5 class="modal-title" id="exampleModalLabel">Cadastro realizado!!</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+		  		Seu cadastro foi realizado!<br>
+				Todos os seus dados estão seguros em nossa base de dados. Aproveite nosso sistema, adquira um plano e faça bom uso.
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+			</div>
+	  	</div>
+		</div>
+	</div>
+-->
+</div>
+</div>
+{% endblock content %}

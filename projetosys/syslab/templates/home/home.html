@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Syscron - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="A new design system for developing with less effort.">
+    <meta name="author" content="BootstrapBay">
+
+    <link href="#" rel="icon" type="image/png">
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+		<link href="{% static 'css/lazy.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/demo.css' %}" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+  </head>
+  <body class="landing">
+    {% include "navbar.html" %}
+<div class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<h1 class="display-7">Seja bem-vindo! <br /> Conheça mais sobre nosso sistema.</h1>
+				<p class="lead my-4">Agende suas postagens e obtenha automação. <br /> Divulgue seu produto, empresa e outros.</p>
+		    <form class="form-subscribe form-inline mb-3">
+		        <a type="submit" class="btn btn-outline-primary btn-pill btn-lg mt-0 mt-md-3 mt-lg-0">Assista nosso video <i class="fa fa-play"></i></a>
+		    </form>
+			</div>
+			<div class="col-12 col-md-6">
+				<div class="devices pl-md-4 pt-5 pt-md-0">
+					<img src="/static/media/undraw_design_components_9vy6.svg" alt="Example Navbar 1" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}" ></script>
+
+    <!-- optional plugins -->
+    <!--<script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>-->
+
+    <!--   lazy javascript -->
+    <script src="{% static 'js/lazy.js' %}" ></script>
+  </body>
+</html>

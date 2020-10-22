@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Confirmação de logout{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6" style="margin-top: 10rem">
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <h4>{{ user.first_name }}, você tem certeza que deseja sair?</h4>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <button id="btn-sair" type="submit" class="btn btn-danger mt-2">Sair</button>
+                    </div>
+                    <div class="col-4">
+                        {% if request.META.HTTP_REFERER %}
+                            <a href="{{request.META.HTTP_REFERER}}" class="btn btn-primary">Voltar</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-4"></div>
+
+    </div>
+{% endblock %}

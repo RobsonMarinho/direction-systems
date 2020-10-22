@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Acessar{% endblock %}
+
+{% block content %}
+<div class="row" style='margin-top: 5rem; text-decoration: none'>
+
+<div class="col-12 col-md-4 offset-md-1 mt-2">
+      <div class='card'>
+        <div class='card-header'>
+          <h5 class="text-center">Insira seus dados para acessar o sistema</h5>
+        </div>
+        <div class="card-body">
+          <form method="post">
+              {% csrf_token %}
+              <div class="form-group">
+                <div class="col-md-12">
+                  {{ form.login }}
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-md-12">
+                    {{ form.password }}
+                </div>
+                </div>
+                <p style='color: red;'>{{ form.errors }}</p>
+              <div class="form-group ml-3">
+                  <div class="custom-control custom-switch my-4">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1">Manter acesso</label>
+                  </div>
+                  <input type="submit" value="Acessar" class="btn btn-outline-primary">
+              </div>
+          </form>
+        </div>
+        </div>
+        <p class="small my-4 text-center">Confira nossos <a class="text-primary" href="#a"><strong>termos de uso.</strong></a></p>
+        <p class="small my-4 text-center">Fique por dentro dos nossos <a class="text-primary" href="{% url 'pricing' %}"><strong>planos.</strong></a></p>
+        <p class="small my-4 text-center">Não se cadastrou ainda? <a class="text-primary" href="{% url 'account_signup' %}"><strong>Cadastre-se aqui.</strong></a></p>
+    </div>
+    <div class="col-12 col-md-6 offset-md-1 d-flex">
+      <img src="/static/media/undraw_two_factor_authentication_namy.svg">
+    </div>
+
+</div>
+{% endblock %}

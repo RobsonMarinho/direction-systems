@@ -1,0 +1,7 @@
+<header >
+  <div class="container-fluid text-right">
+      {% if user.is_authenticated %}
+        <p class="mr-4">Bem vindo(a) <strong>{{ user.first_name }}</strong>, aproveite nosso sistema.</p>
+      {% endif %}
+  </div>
+</header>
