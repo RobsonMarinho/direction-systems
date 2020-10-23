@@ -26,7 +26,7 @@ validação foi feito com conceitos de orientação a objetos.
 
 ## CRUD de pacientes com Python e Django
 Sistema simples para fazer operações CRUD, criado para estudos na linguagem Python e o framework Django. Para rodar o sistema é necessário ter a versão 3.7 do python
-e criar uma virtual environment. Códigos para criar um ambiente virtual:
+e criar uma virtual environment. Logo abaixo encontra-se os códigos para criar um ambiente virtual:
 ```
 $ cd proj-ecope
 $ pipenv install
