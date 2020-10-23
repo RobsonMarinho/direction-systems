@@ -19,7 +19,7 @@ Para obter os códigos e projetos basta clonar o repositório ou fazer download 
 - Sitema para agendamentos de postagens em redes sociais (Syscron)
 
 ## Formulário de cadastro com HTML, CSS e validações em JavaScript
-Deaenvolvido com HTML e CSS, a validação deste formulário é feita em JavaScript. Tentando aplicar as boas praicas do Clean Code, todo script que faz a
+Desenvolvido com HTML e CSS, a validação deste formulário é feita em JavaScript. Tentando aplicar as boas praticas do Clean Code, todo script que faz a
 validação foi feito com conceitos de orientação a objetos.
 >![cad-valid02](https://user-images.githubusercontent.com/49026950/96935326-344e5500-149a-11eb-8fe2-725eb5eb31ff.png)
 >![cad-valid03](https://user-images.githubusercontent.com/49026950/96935348-43350780-149a-11eb-90ae-ad12513ca3e1.png)
