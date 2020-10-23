@@ -25,7 +25,7 @@ validação foi feito com conceitos de orientação a objetos.
 >![cad-valid03](https://user-images.githubusercontent.com/49026950/96935348-43350780-149a-11eb-90ae-ad12513ca3e1.png)
 
 ## CRUD de pacientes com Python e Django
-Sistema simple para fazer operações CRUD, criado para estudos na linguagem Python e o framework Django. Para rodar o sistema é necessário ter o a versão 3.7 do python
+Sistema simples para fazer operações CRUD, criado para estudos na linguagem Python e o framework Django. Para rodar o sistema é necessário ter a versão 3.7 do python
 e criar uma virtual environment. Códigos para criar um ambiente virtual:
 ```
 $ cd proj-ecope
