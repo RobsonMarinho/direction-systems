@@ -1,6 +1,6 @@
 # Projetos para seletiva de trainee na empresa Direction Systems
 
-Como proposta para seleção criei alguns projetos e adcionei outros que estavam em andamento, para serem avaliados nessa fase da seletiva.
+Como proposta para seleção criei alguns projetos e adicionei outros que estavam em andamento, para serem avaliados nessa fase da seletiva.
 Para obter os códigos e projetos basta clonar o repositório ou fazer download em modo ZIP indicados na imagem.
 >![inicio](https://user-images.githubusercontent.com/49026950/96831190-feb25900-1412-11eb-87a8-636b22e97300.png)
 
@@ -16,7 +16,7 @@ Para obter os códigos e projetos basta clonar o repositório ou fazer download 
 - Formulário de cadastro com HTML, CSS e validações em JavaScript
 - CRUD de pacientes com Python e Django
 - Consumindo API do Youtube com Python e Django
-- Sitema para agendamentos de postagens em redes sociais (Syscron)
+- Sistema para agendamentos de postagens em redes sociais (Syscron)
 
 ## Formulário de cadastro com HTML, CSS e validações em JavaScript
 Desenvolvido com HTML e CSS, a validação deste formulário é feita em JavaScript. Tentando aplicar as boas praticas do Clean Code, todo script que faz a
@@ -54,7 +54,7 @@ $ python manage.py runserver
 ```
 >![youtube-data-api](https://user-images.githubusercontent.com/49026950/96939329-25b86b80-14a3-11eb-81c7-a5cddba1e674.png)
 
-## Sitema para agendamentos de postagens em redes sociais (Syscron)
+## Sistema para agendamentos de postagens em redes sociais (Syscron)
 Projeto criado com o intuito de agendar posts nas redes sociais e ser comercializado. Para divulgação de produtos, games e entre outros
 o Syscron vai ser integrado com a principal rede social que é o Facebook. Totalmente feito em Python e Django, ainda está em sua fase de pré-projeto mas ja possui
 uma boa autenticação de usuários com cadastro, login e recuperação de senha. Também precisa criar um ambiente virtual, e instalar as dependencias do projeto.
