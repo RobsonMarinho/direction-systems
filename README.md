@@ -1,6 +1,6 @@
 # Projetos para seletiva de trainee na empresa Direction Systems
 
-Como proposta foram criados alguns projetos e adcionados uns que estavam em andamentos, para serem avaliados nessa fase da seletiva.
+Como proposta para seleção criei alguns projetos e adcionei outros que estavam em andamento, para serem avaliados nessa fase da seletiva.
 Para obter os códigos e projetos basta clonar o repositório ou fazer download em modo ZIP indicados na imagem.
 >![inicio](https://user-images.githubusercontent.com/49026950/96831190-feb25900-1412-11eb-87a8-636b22e97300.png)
 
@@ -47,7 +47,7 @@ $ python manage.py runserver
 
 ## Consumindo API do Youtube com Python e Django
 Aprimorando conhecimentos na linguagem e framework utilizados, realizei um pequeno trecho de código que consome a API do Youtube.
-O sistema pesquisa uma playlist no youtube e retorna os videos na pagina especificada. Também é necessário criar um ambiente virtual.
+O sistema pesquisa uma playlist no youtube e retorna os vídeos na página especificada. Também é necessário criar um ambiente virtual.
 ```
 $ pipenv install
 $ python manage.py runserver
