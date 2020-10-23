@@ -1,7 +1,7 @@
 # Projetos para seletiva de trainee na empresa Direction Systems
 
 Como proposta para seleção criei alguns projetos e adicionei outros que estavam em andamento, para serem avaliados nessa fase da seletiva.
-Para obter os códigos e projetos basta clonar o repositório ou fazer download em modo ZIP indicados na imagem.
+Para obter os códigos e projetos basta clonar o repositório ou fazer download em modo ZIP, como indicado na imagem.
 >![inicio](https://user-images.githubusercontent.com/49026950/96831190-feb25900-1412-11eb-87a8-636b22e97300.png)
 
 ## Liguagens, ferramentas e frameworks usados
